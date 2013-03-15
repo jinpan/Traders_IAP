@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>A9237863-AE2D-4CC1-AC6D-081B1C75D8DE</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="TTS.Common" />
+    <Reference Include="System.Data" />
+    <Reference Include="Janus.Windows.GridEX.v4" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Ciloci.Flee" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Core" />
+    <Reference Include="Janus.Data.v4" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="protobuf-net" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SnapFormExtender\SnapFormExtender.cs" />
+    <Compile Include="TTS.Controls\ChatPanel.cs" />
+    <Compile Include="TTS.Properties\Resources.cs" />
+    <Compile Include="TTS.Properties\Settings.cs" />
+    <Compile Include="TTS\AccountItem.cs" />
+    <Compile Include="TTS\APIManager.cs" />
+    <Compile Include="TTS\APIObject.cs" />
+    <Compile Include="TTS\Assets.cs" />
+    <Compile Include="TTS\BookTrader.cs" />
+    <Compile Include="TTS\BuySellEntry.cs" />
+    <Compile Include="TTS\Chat.cs" />
+    <Compile Include="TTS\ChatManager.cs" />
+    <Compile Include="TTS\Client.cs" />
+    <Compile Include="TTS\ClientCallbackService.cs" />
+    <Compile Include="TTS\ColorManager.cs" />
+    <Compile Include="TTS\ComplianceEvent.cs" />
+    <Compile Include="TTS\ConnectedTradersManager.cs" />
+    <Compile Include="TTS\ElectricityCharting.cs" />
+    <Compile Include="TTS\ExpressionChartItem.cs" />
+    <Compile Include="TTS\Extensions.cs" />
+    <Compile Include="TTS\Game.cs" />
+    <Compile Include="TTS\GameManager.cs" />
+    <Compile Include="TTS\IAPIObject.cs" />
+    <Compile Include="TTS\IRTDObject.cs" />
+    <Compile Include="TTS\KillAll.cs" />
+    <Compile Include="TTS\LadderTrader.cs" />
+    <Compile Include="TTS\News.cs" />
+    <Compile Include="TTS\OrderEntryPanel.cs" />
+    <Compile Include="TTS\OTCEntry.cs" />
+    <Compile Include="TTS\PNLCharting.cs" />
+    <Compile Include="TTS\Portfolio.cs" />
+    <Compile Include="TTS\PriceVolume.cs" />
+    <Compile Include="TTS\PrivateChat.cs" />
+    <Compile Include="TTS\Program.cs" />
+    <Compile Include="TTS\RIT.cs" />
+    <Compile Include="TTS\RTDInfo.cs" />
+    <Compile Include="TTS\RTDManager.cs" />
+    <Compile Include="TTS\RTDObject.cs" />
+    <Compile Include="TTS\SecurityCharting.cs" />
+    <Compile Include="TTS\SecurityItem.cs" />
+    <Compile Include="TTS\ServiceManager.cs" />
+    <Compile Include="TTS\SpreadEntry.cs" />
+    <Compile Include="TTS\SpreadEntryPanel.cs" />
+    <Compile Include="TTS\STAR.cs" />
+    <Compile Include="TTS\StateManager.cs" />
+    <Compile Include="TTS\TenderOrder.cs" />
+    <Compile Include="TTS\TickerString.cs" />
+    <Compile Include="TTS\TimeSales.cs" />
+    <Compile Include="TTS\TradeBlotter.cs" />
+    <Compile Include="TTS\TraderInfo.cs" />
+    <Compile Include="TTS\TransactionLog.cs" />
+    <Compile Include="TTS\TransportArbEntry.cs" />
+    <Compile Include="TTS\TTSForm.cs" />
+    <Compile Include="TTS\TTSFormManager.cs" />
+    <Compile Include="TTS\TTSFormMenuItem.cs" />
+    <Compile Include="TTS\TTSFormState.cs" />
+    <Compile Include="TTS\TTSFormStateItem.cs" />
+    <Compile Include="TTS\TTSPanel.cs" />
+    <Compile Include="TTS\TTSToolStripMenuItem.cs" />
+    <Compile Include="TTS\UniqueDateTime.cs" />
+    <Compile Include="TTS\UpdateableDataView.cs" />
+    <Compile Include="TTS\VariableNumericUpDown.cs" />
+    <Compile Include="TTS\WorkspaceItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Client.exe.licenses" />
+    <EmbeddedResource Include="TTS.Controls\ChatPanel.resources" />
+    <EmbeddedResource Include="TTS.Properties\Resources.resources" />
+    <EmbeddedResource Include="TTS\Assets.resources" />
+    <EmbeddedResource Include="TTS\BookTrader.resources" />
+    <EmbeddedResource Include="TTS\BuySellEntry.resources" />
+    <EmbeddedResource Include="TTS\Chat.resources" />
+    <EmbeddedResource Include="TTS\Client.resources" />
+    <EmbeddedResource Include="TTS\ComplianceEvent.resources" />
+    <EmbeddedResource Include="TTS\ElectricityCharting.resources" />
+    <EmbeddedResource Include="TTS\KillAll.resources" />
+    <EmbeddedResource Include="TTS\LadderTrader.resources" />
+    <EmbeddedResource Include="TTS\News.resources" />
+    <EmbeddedResource Include="TTS\OrderEntryPanel.resources" />
+    <EmbeddedResource Include="TTS\OTCEntry.resources" />
+    <EmbeddedResource Include="TTS\PNLCharting.resources" />
+    <EmbeddedResource Include="TTS\Portfolio.resources" />
+    <EmbeddedResource Include="TTS\PrivateChat.resources" />
+    <EmbeddedResource Include="TTS\RIT.resources" />
+    <EmbeddedResource Include="TTS\RTDInfo.resources" />
+    <EmbeddedResource Include="TTS\SecurityCharting.resources" />
+    <EmbeddedResource Include="TTS\SpreadEntry.resources" />
+    <EmbeddedResource Include="TTS\SpreadEntryPanel.resources" />
+    <EmbeddedResource Include="TTS\STAR.resources" />
+    <EmbeddedResource Include="TTS\TenderOrder.resources" />
+    <EmbeddedResource Include="TTS\TimeSales.resources" />
+    <EmbeddedResource Include="TTS\TradeBlotter.resources" />
+    <EmbeddedResource Include="TTS\TraderInfo.resources" />
+    <EmbeddedResource Include="TTS\TransactionLog.resources" />
+    <EmbeddedResource Include="TTS\TransportArbEntry.resources" />
+    <EmbeddedResource Include="TTS\TTSForm.resources" />
+    <EmbeddedResource Include="TTS\TTSPanel.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

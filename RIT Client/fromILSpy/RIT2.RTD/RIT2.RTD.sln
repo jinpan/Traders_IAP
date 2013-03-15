@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RIT2.RTD", "RIT2.RTD.csproj", "{227635A1-C65C-40F9-AFD5-33E3C14832EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{227635A1-C65C-40F9-AFD5-33E3C14832EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{227635A1-C65C-40F9-AFD5-33E3C14832EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{227635A1-C65C-40F9-AFD5-33E3C14832EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{227635A1-C65C-40F9-AFD5-33E3C14832EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>83FDFA51-538D-4DEF-9E95-8C4A9C1EE0D2</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TTS.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="Janus.Windows.GridEX.v4" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="System.Core" />
+    <Reference Include="protobuf-net" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Janus.Data.v4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MRG.Controls.UI\LoadingCircle.cs" />
+    <Compile Include="TTS\AssetItemUpdateMessage.cs" />
+    <Compile Include="TTS\AssetParameters.cs" />
+    <Compile Include="TTS\AssetParametersUpdate.cs" />
+    <Compile Include="TTS\AssetType.cs" />
+    <Compile Include="TTS\AssetUpdateMessage.cs" />
+    <Compile Include="TTS\AuthenticationResponse.cs" />
+    <Compile Include="TTS\BindableToolStripDropDownButton.cs" />
+    <Compile Include="TTS\BindableToolStripMenuItem.cs" />
+    <Compile Include="TTS\BindableToolStripStatusLabel.cs" />
+    <Compile Include="TTS\CaseInsensitiveDictionary.cs" />
+    <Compile Include="TTS\ChartExtensions.cs" />
+    <Compile Include="TTS\ChartItem.cs" />
+    <Compile Include="TTS\ChartPoint.cs" />
+    <Compile Include="TTS\ChartType.cs" />
+    <Compile Include="TTS\ClientServiceBehavior.cs" />
+    <Compile Include="TTS\ClientServiceErrorHandler.cs" />
+    <Compile Include="TTS\ColorHelper.cs" />
+    <Compile Include="TTS\ColorPaletteExtensions.cs" />
+    <Compile Include="TTS\ContainmentUpdateMessage.cs" />
+    <Compile Include="TTS\CopyHelper.cs" />
+    <Compile Include="TTS\CorrelationParameters.cs" />
+    <Compile Include="TTS\CrytoHelper.cs" />
+    <Compile Include="TTS\CurrencyParameters.cs" />
+    <Compile Include="TTS\DataTableExtensions.cs" />
+    <Compile Include="TTS\DefaultValueAttribute.cs" />
+    <Compile Include="TTS\DefaultValueAttributeHelper.cs" />
+    <Compile Include="TTS\DialogHelper.cs" />
+    <Compile Include="TTS\ElectricityChart.cs" />
+    <Compile Include="TTS\FlagCheckedListBox.cs" />
+    <Compile Include="TTS\FlagCheckedListBoxItem.cs" />
+    <Compile Include="TTS\FlagEnumUIEditor.cs" />
+    <Compile Include="TTS\GameParameters.cs" />
+    <Compile Include="TTS\GameStatus.cs" />
+    <Compile Include="TTS\GeneralParameters.cs" />
+    <Compile Include="TTS\GeneralParametersUpdate.cs" />
+    <Compile Include="TTS\GridEXExtensions.cs" />
+    <Compile Include="TTS\IClientCallbackService.cs" />
+    <Compile Include="TTS\IClientService.cs" />
+    <Compile Include="TTS\ListExtensions.cs" />
+    <Compile Include="TTS\MathHelper.cs" />
+    <Compile Include="TTS\MessageType.cs" />
+    <Compile Include="TTS\OrderAddMessage.cs" />
+    <Compile Include="TTS\OrderStatus.cs" />
+    <Compile Include="TTS\OrderType.cs" />
+    <Compile Include="TTS\OrderUpdateMessage.cs" />
+    <Compile Include="TTS\OTCStatus.cs" />
+    <Compile Include="TTS\OTCUpdateMessage.cs" />
+    <Compile Include="TTS\PortfolioUpdateMessage.cs" />
+    <Compile Include="TTS\PromptDialog.cs" />
+    <Compile Include="TTS\ProtoTable.cs" />
+    <Compile Include="TTS\RandomHelper.cs" />
+    <Compile Include="TTS\RiskTypeParameters.cs" />
+    <Compile Include="TTS\RiskTypeParametersUpdate.cs" />
+    <Compile Include="TTS\SecurityBidAskChartPoint.cs" />
+    <Compile Include="TTS\SecurityChartPoint.cs" />
+    <Compile Include="TTS\SecurityParameters.cs" />
+    <Compile Include="TTS\SecurityParametersUpdate.cs" />
+    <Compile Include="TTS\SecurityType.cs" />
+    <Compile Include="TTS\SecurityVolumeChartPoint.cs" />
+    <Compile Include="TTS\SpreadParameters.cs" />
+    <Compile Include="TTS\StringExtensions.cs" />
+    <Compile Include="TTS\SyncState.cs" />
+    <Compile Include="TTS\SystemMessageType.cs" />
+    <Compile Include="TTS\TargetType.cs" />
+    <Compile Include="TTS\TenderType.cs" />
+    <Compile Include="TTS\ThreadHelper.cs" />
+    <Compile Include="TTS\TickerWeight.cs" />
+    <Compile Include="TTS\TimeSalesType.cs" />
+    <Compile Include="TTS\TraderAssetChartPoint.cs" />
+    <Compile Include="TTS\TraderChartPoint.cs" />
+    <Compile Include="TTS\TraderParameters.cs" />
+    <Compile Include="TTS\TraderSecurityChartPoint.cs" />
+    <Compile Include="TTS\TraderTradingLimitChartPoint.cs" />
+    <Compile Include="TTS\TraderTypeParameters.cs" />
+    <Compile Include="TTS\TradingFeeType.cs" />
+    <Compile Include="TTS\TradingLimitUpdateMessage.cs" />
+    <Compile Include="TTS\TransactionAddMessage.cs" />
+    <Compile Include="TTS\TransactionType.cs" />
+    <Compile Include="TTS\UpdateState.cs" />
+    <Compile Include="TTS\VariablesUpdateMessage.cs" />
+    <Compile Include="TTS\VariableUpdateType.cs" />
+    <Compile Include="TTS\VirtualGridEX.cs" />
+    <Compile Include="TTS\WindowType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TTS\Common.dll.licenses" />
+    <EmbeddedResource Include="TTS\PromptDialog.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
